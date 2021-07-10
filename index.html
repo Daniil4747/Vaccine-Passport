@@ -27,35 +27,35 @@
                         <i class='bx bx-food-menu' ></i>
                         <span class="links_name">Паспорт</span>
                     </a>
-                    <span class="tooltip">Dashboard</span>
+                    <span class="tool_min">Паспорт</span>
                 </li>
                 <li>
                     <a href="#">
                         <i class='bx bx-book-add' ></i>
                         <span class="links_name">Оповещения</span>
                     </a>
-                    <span class="tooltip">Dashboard</span>
+                    <span class="tool_min">Оповещения</span>
                 </li>
                 <li>
                     <a href="#">
                         <i class='bx bxs-capsule'></i>
                         <span class="links_name">Вакцинация</span>
                     </a>
-                    <span class="tooltip">Dashboard</span>
+                    <span class="tool_min">Вакцинация</span>
                 </li>
                 <li>
                     <a href="#">
                         <i class='bx bx-book-add' ></i>
                         <span class="links_name">История</span>
                     </a>
-                    <span class="tooltip">Dashboard</span>
+                    <span class="tool_min">История</span>
                 </li>
                 <li>
                     <a href="#">
                         <i class='bx bx-cog'></i>
                         <span class="links_name">Настройки</span>
                     </a>
-                    <span class="tooltip"></span>
+                    <span class="tool_min">Настройки</span>
                 </li>
             </ul>
             <div class="profile_content">
@@ -75,6 +75,15 @@
         <div class="home_content">
             <div class="text">Домашнаяя страница</div>
         </div>
+
+        <script>
+            let side_btn = document.querySelector("#side_btn")
+            let sidebar = document.querySelector(".sidebar")
+
+            side_btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            };
+        </script>
     </body>
     
 </html>
