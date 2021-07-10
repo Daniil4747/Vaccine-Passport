@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Росвакцинпаспорт</title>
+        <title>Росвакцин</title>
         <meta charset="utf-8">
 
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link href="../Vaccine-Web/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="../Vaccine-Web/css/bootstrap/bootstrap-grid.css" rel="stylesheet">
 
@@ -12,21 +13,67 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     </head>
     <body>
-        <header>
-            <div class="container rounded">
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-virus-block' ></i>
+                    <div class="logo_name">Росвакцин</div>
+                </div>
+                <i class='bx bx-menu' id="side_btn"></i>
             </div>
-        </header>
-
-        <div class="container">
-            <div class="col-4">
-                <div class="test">
-                    
+            <ul class="nav_list">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-food-menu' ></i>
+                        <span class="links_name">Паспорт</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-book-add' ></i>
+                        <span class="links_name">Оповещения</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-capsule'></i>
+                        <span class="links_name">Вакцинация</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-book-add' ></i>
+                        <span class="links_name">История</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Настройки</span>
+                    </a>
+                    <span class="tooltip"></span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../Vaccine-Web/resources/asuka.jpg" alt="Asuka">
+                        <div class="name_birth">
+                            <div class="name">Никита Козлов</div>
+                            <div class="birth">25.04.2001</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out" ></i>
                 </div>
             </div>
-            <div class="col"></div>
-            <div class="col-md-auto">
-
-            </div>
+        </div>
+        <!-- The end of siedbar here-->
+        <div class="home_content">
+            <div class="text">Домашнаяя страница</div>
         </div>
     </body>
     
