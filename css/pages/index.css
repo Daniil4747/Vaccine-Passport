@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #008c64;
+    min-height: 100vh;
+    background: linear-gradient(#008c64, #000);
+}
+
+header .container
+{
+    background-color: #fff;
+    justify-content: center;
+    padding: 24px;
+    border-radius: 1rem !important;
+}
+
+.test
+{
+    height: 100px;
+    background-color: blue;
+}
