@@ -4,26 +4,77 @@
         <meta charset="utf-8">
         <link rel="shortcut icon" href="../Vaccine-Web/resources/favicon.png" type="imge\png">
 
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
         <link href="../Vaccine-Web/css/pages/login.css" rel="stylesheet">
     </head>
     <body>
-        <div class="login_box">
-            <h1>Вход</h1>
-            <form method="POST">
-                <div class="txt_field">
-                    <input type="text" required>
-                    <label>Логин</label>
-                </div>
-                <div class="txt_field">
-                    <input type="password" required>
-                    <label>Пароль</label>
-                </div>
-                <div class="pass"></div>
-                <input type="submit" value="Войти">
-                <div class="signup_link">
-                    Ещё нет аккаунта? <a href="#">Зарегистрируйтесь</a>
-                </div>
-            </form>
+        <div class="container">
+            <img class="wave" src="../Vaccine-Web/resources/bg-wave.png">
+            <div class="img">
+                <img src="../Vaccine-Web/resources/undraw_medical_care_movn.svg">
+            </div>
+            <div class="login-content">
+                <form action="index.html">
+                    <img src="../Vaccine-Web/resources/avatar.svg">
+                    <h2 class="title">Вход</h2>
+                       <div class="input-div one">
+                          <div class="i">
+                            <i class='bx bx-user' ></i>
+                          </div>
+                          <div class="div">
+                                  <h5>Логин</h5>
+                                  <input type="text" class="input">
+                          </div>
+                       </div>
+                       <div class="input-div pass">
+                          <div class="i"> 
+                            <i class='bx bx-lock-alt' ></i>
+                          </div>
+                          <div class="div">
+                               <h5>Пароль</h5>
+                               <input type="password" class="input">
+                          </div>
+                        </div>
+                        <div class="input-div pass hidden_untill_active">
+                            <div class="i"> 
+                              <i class='bx bx-lock-alt' ></i>
+                            </div>
+                            <div class="div">
+                                 <h5>Пароль</h5>
+                                 <input type="password" class="input">
+                            </div>
+                          </div>
+                          <div class="input-div pass hidden_untill_active">
+                            <div class="i"> 
+                              <i class='bx bx-lock-alt' ></i>
+                            </div>
+                            <div class="div">
+                                 <h5>Пароль</h5>
+                                 <input type="password" class="input">
+                            </div>
+                          </div>
+                    <a id="registration_btn" href="#">Ещё не зарегистрированы?</a>
+                    <input type="submit" class="btn" value="Login">
+                </form>
+            </div>
         </div>
+
+        <script type="text/javascript" src="../Vaccine-Web/js/login.js"></script>
+        <script>
+            let registration_btn = document.querySelector("#registration_btn")
+            let login_cont = document.querySelector(".login-content")
+
+            registration_btn.onclick = function() {
+                login_cont.classList.toggle("active")
+                if (document.getElementById("registration_btn").innerHTML == "fdsfsd") {
+                    document.getElementById("registration_btn").innerHTML = "Ещё не зарегистрированы?"
+                }
+                else
+                {
+                    document.getElementById("registration_btn").innerHTML = "fdsfsd"
+                }
+            }
+        </script>
     </body>
 </html>

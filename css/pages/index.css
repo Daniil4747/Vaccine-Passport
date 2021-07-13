@@ -10,8 +10,8 @@
 
 body {
     min-height: 100vh;
-    /*background: #008c64;*/
-    background: linear-gradient(#008c64, #000);
+    background: #f0f0e8;
+    /*background: linear-gradient(#008c64, #000);*/
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -23,7 +23,7 @@ body {
     left: 0;
     height: 100%;
     width: 78px;
-    background: #00614c;
+    background: #fe9810;
     padding: 6px 14px;
     transition: all 0.5s ease;
 }
@@ -132,7 +132,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #008c64;
+    color: #fe9810;
     background: #fff;
 }
 
@@ -173,7 +173,7 @@ body {
 
 .sidebar.active .profile_content .profile {
     /*background: #008c64;*/
-    background: #003b2f;
+    background: #d17c0d;
 }
 
 .profile_content .profile .profile_details {
@@ -220,7 +220,7 @@ body {
     border-radius: 12px;
     text-align: center;
     transition: all 0.5s ease;
-    background: #008c64;
+    background: #d17c0d;
 }
 
 .sidebar.active .profile #log_out {
