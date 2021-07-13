@@ -10,8 +10,8 @@
 
 body {
     min-height: 100vh;
-    background: #008c64;
-    /*background: linear-gradient(#008c64, #000);*/
+    /*background: #008c64;*/
+    background: linear-gradient(#008c64, #000);
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -23,7 +23,7 @@ body {
     left: 0;
     height: 100%;
     width: 78px;
-    background: #00b48c;
+    background: #00614c;
     padding: 6px 14px;
     transition: all 0.5s ease;
 }
@@ -172,7 +172,8 @@ body {
 }
 
 .sidebar.active .profile_content .profile {
-    background: #008c64;
+    /*background: #008c64;*/
+    background: #003b2f;
 }
 
 .profile_content .profile .profile_details {
@@ -230,7 +231,7 @@ body {
     background: none;
 }
 
-.home_content {
+.site_content {
     position: absolute;
     width: calc(100% - 78px);
     left: 78px;
@@ -238,14 +239,14 @@ body {
     transition: all 0.5s ease;
 }
 
-.home_content .text {
+.site_content .text {
     font-size: 25px;
     font-weight: 500;
     color: #000;
     margin: 12px;
 }
 
-.sidebar.active ~ .home_content {
+.sidebar.active ~ .site_content {
     width: calc(100% - 240px);
     left: 240px;
 }

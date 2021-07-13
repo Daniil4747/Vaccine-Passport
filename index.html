@@ -3,12 +3,14 @@
     <head>
         <title>Росвакцин</title>
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="../Vaccine-Web/resources/favicon.png" type="imge\png">
 
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link href="../Vaccine-Web/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="../Vaccine-Web/css/bootstrap/bootstrap-grid.css" rel="stylesheet">
 
         <link href="../Vaccine-Web/css/pages/index.css" rel="stylesheet">
+        <link href="../Vaccine-Web/css/pages/content.css" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     </head>
@@ -72,10 +74,52 @@
             </div>
         </div>
         <!-- The end of siedbar here-->
-        <div class="home_content">
-            <div class="text">Домашнаяя страница</div>
+        <div class="site_content">
+            <div class="navbar">
+                <div class="section_name">
+                    <span>Section</span>
+                </div>
+                <div class="search_box">
+                    <i class='bx bx-search' ></i>
+                    <input type="search" placeholder="Найти..." >
+                </div>
+                <div class="navbar_profile_details">
+                    <i class='bx bx-bell' ></i>
+                    <img src="../Vaccine-Web/resources/asuka.jpg">
+                </div>
+            </div>
+            <div class="section_content">
+                <img src="../Vaccine-Web/resources/asuka.jpg">
+                <ul>
+                    <li>
+                        <div class="input_box">
+                            <span>Вакцина</span>
+                            <input class="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input_box">
+                            <span>ПЦР-Тест</span>
+                            <input class="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input_box">
+                            <span>Тест</span>
+                            <input class="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input_box">
+                            <span>Серия и номер</span>
+                            <input class="text">
+                        </div>
+                    </li>
+                </ul>
+                <div class="_cov_padding"></div>
+            </div>
         </div>
-
+        <!-- The end of content container-->
         <script>
             let side_btn = document.querySelector("#side_btn")
             let sidebar = document.querySelector(".sidebar")
@@ -84,6 +128,5 @@
                 sidebar.classList.toggle("active");
             };
         </script>
-    </body>
-    
+    </body> 
 </html>
