@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Росвакцин</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../Vaccine-Web/resources/favicon.png" type="imge\png">
+
+        
+        <link href="../Vaccine-Web/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="../Vaccine-Web/css/bootstrap/bootstrap-grid.css" rel="stylesheet">
+
+        <link href="../Vaccine-Web/css/pages/index.css" rel="stylesheet">
+        <link href="../Vaccine-Web/css/pages/content.css" rel="stylesheet">
+
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-virus-block' ></i>
+                    <div class="logo_name">Росвакцин</div>
+                </div>
+                <i class='bx bx-menu' id="side_btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="index.html">
+                        <i class='bx bx-food-menu' ></i>
+                        <span class="links_name">Паспорт</span>
+                    </a>
+                    <span class="tool_min">Паспорт</span>
+                </li>
+                <li>
+                    <a href="Alerts.html">
+                        <i class='bx bx-book-add' ></i>
+                        <span class="links_name">Оповещения</span>
+                    </a>
+                    <span class="tool_min">Оповещения</span>
+                </li>
+                <li>
+                    <a href="Vaccination.html">
+                        <i class='bx bxs-capsule'></i>
+                        <span class="links_name">Вакцинация</span>
+                    </a>
+                    <span class="tool_min">Вакцинация</span>
+                </li>
+                <li>
+                    <a href="History.html">
+                        <i class='bx bx-book-add' ></i>
+                        <span class="links_name">История</span>
+                    </a>
+                    <span class="tool_min">История</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Настройки</span>
+                    </a>
+                    <span class="tool_min">Настройки</span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../Vaccine-Web/resources/asuka.jpg" alt="Asuka">
+                        <div class="name_birth">
+                            <div class="name">Никита Козлов</div>
+                            <div class="birth">25.04.2001</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out" ></i>
+                </div>
+            </div>
+        </div>
+        <!-- The end of siedbar here-->
+        <div  class="site_content">
+
+            <div class="navbar">
+                <div class="1"><img src="../Vaccine-Web/resources/history.png"></div>
+                <div class="2"><h3>История</h3></div> 
+                <div class="3"><img src="../Vaccine-Web/resources/history.png"></div>
+            </div>
+            <div class="navbar"> 
+                <div class="1"></div>
+                <div class="2"><h6>Здесь будет история ваших прививок и вакцин.</h6></div>
+                <div class="3"></div>                           
+             </div>
+            </div>    
+        </div>
+        <!-- The end of content container-->
+        <script>
+            let side_btn = document.querySelector("#side_btn")
+            let sidebar = document.querySelector(".sidebar")
+
+            side_btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            };
+        </script>
+    </body> 
+</html>
